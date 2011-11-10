@@ -5,10 +5,19 @@
 
 int  main()
 {
-  int i;
-  for (i = 1; i < 101; i++)
+  int count;
+  for (count = 1; count < 101; count++)
   {
-    printf ("%d", i);
+    if ((count % 3) == 0)
+      printf ("Fizz");
+
+    if ((count % 5) == 0)
+      printf ("Buzz");
+
+    if (((count % 5) != 0) && ((count % 3) != 0))
+      printf ("%d", count);
+
+    printf ("\n");
   } 
   return 0;
 }
