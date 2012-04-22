@@ -3,14 +3,16 @@ class FizzBuzz
   def self.calc(dothisthing)
 
     if dothisthing % 15 == 0
-      return "fizzbuzz"
+      result = "fizzbuzz"
     elsif dothisthing % 3 == 0
-      return "fizz"
+      result = "fizz"
     elsif dothisthing % 5 == 0
-      return "buzz"
+      result = "buzz"
+    else
+      result = dothisthing.to_s
     end
     
-    return dothisthing
+    return result
 
   end
 end
