@@ -11,7 +11,8 @@ describe "looping through more numbers at once" do
     end
 
     counter = counter + 1
-    print "counter = " + counter + "\n"
+    print "counter = " + counter.to_s + " and FizzBuzz = " + FizzBuzz.calc(counter).to_s + "\n"
+
   end
 end
 
