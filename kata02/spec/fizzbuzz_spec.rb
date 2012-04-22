@@ -1,5 +1,20 @@
 require_relative '../lib/fizzbuzz'
 
+describe "looping through more numbers at once" do
+
+  counter = 1
+
+  while counter <= 10 do
+
+    it "should return 1" do
+      FizzBuzz.calc(counter).should == counter
+    end
+
+    counter = counter + 1
+    print "counter = " + counter + "\n"
+  end
+end
+
 describe "one step at a time" do
 
   it "should return 1" do
