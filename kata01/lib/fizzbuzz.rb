@@ -2,11 +2,11 @@ class FizzBuzz
 
   def self.calc(this_number)
 
-    if this_number % 3 == 0
+    if this_number % 15 == 0
+      return "fizzbuzz"
+    elsif this_number % 3 == 0
       return "fizz"
-    end
-
-    if this_number % 5 == 0
+    elsif this_number % 5 == 0
       return "buzz"
     end
     
