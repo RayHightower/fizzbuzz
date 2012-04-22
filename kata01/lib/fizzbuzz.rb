@@ -1,17 +1,16 @@
 class FizzBuzz
 
-  def self.calc(this_number)
+  def self.calc(trythisthing)
 
-    if this_number % 15 == 0
+    if trythisthing % 15 == 0
       return "fizzbuzz"
-    elsif this_number % 3 == 0
+    elsif trythisthing % 3 == 0
       return "fizz"
-    elsif this_number % 5 == 0
+    elsif trythisthing % 5 == 0
       return "buzz"
     end
     
-    return this_number
-    
+    return trythisthing
 
   end
 end

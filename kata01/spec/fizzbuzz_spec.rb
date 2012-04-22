@@ -30,7 +30,6 @@ describe "return something" do
         print this_number.to_s + "\n"
       end
 
-
       this_number += 1
     end
 end
