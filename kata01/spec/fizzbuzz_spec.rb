@@ -7,7 +7,7 @@ describe "fizz or buzz: " do
     while this_number < 101 do
 
       result = FizzBuzz.calc(this_number)
-      print result.to_s + " = result printed at top of loop.\n"
+      print "\nresult = " + result.to_s + " this_number = " + this_number.to_s + "\n"
           
       if this_number % 15 == 0
         it "should return fizzbizz for multiples of 15" do
@@ -31,7 +31,7 @@ describe "fizz or buzz: " do
         it "should return the number that we give it" do
           result.should == this_number.to_s
         end
-        print result + "\n"
+        print result + " is the number that we gave it.\n"
       end
 
       this_number += 1
