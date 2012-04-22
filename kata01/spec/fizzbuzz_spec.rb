@@ -3,17 +3,20 @@ require_relative '../lib/fizzbuzz'
 describe "fizz or buzz: " do
 
     this_number = 1 
+
     while this_number <= 100 do
 
+      result = FizzBuzz.calc(this_number).to_s
+          
       if this_number % 15 == 0
         it "should return fizzbizz for multiples of 15" do
-          FizzBuzz.calc(this_number).should == "fizzbuzz"
+          result.should == "fizzbuzz"
         end
-        print this_number.to_s + " " + FizzBuzz.calc(this_number).to_s + " mults of 15\n"
+        print this_number.to_s + " " + result + " mults of 15 with refactoring.\n"
 
       elsif this_number % 3 == 0
         it "should return fizz for multiples of 3" do
-          FizzBuzz.calc(this_number).should == "fizz"
+          result.should == "fizz"
         end
         print this_number.to_s + " " + FizzBuzz.calc(this_number).to_s + " mults of 3\n"
 
@@ -27,7 +30,7 @@ describe "fizz or buzz: " do
         it "should return the number that we give it" do
           FizzBuzz.calc(this_number).should == this_number
         end
-        print this_number.to_s + "\n"
+        print result.to_s + "\n"
       end
 
       this_number += 1
