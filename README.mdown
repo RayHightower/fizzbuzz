@@ -8,13 +8,13 @@ What is FizzBuzz?
 ==
 
 FizzBuzz is a simple program that can typically be written (or
-re-created) in a few mintues. A correct FizzBuzz program will:
+re-created) in a few minutes. A correct FizzBuzz program will:
 
-** Print the integers 1 through 100
-** If the integer is a mulple of 3, the program will print "Fizz"
+* Print the integers 1 through 100
+* If the integer is a mulple of 3, the program will print "Fizz"
 instead of the integer.
-** If the integer is a multiple of 5, the program will print "Buzz"
+* If the integer is a multiple of 5, the program will print "Buzz"
 instead of the integer.
-** If the integer is a multiple of both 3 and 5, the program will print
+* If the integer is a multiple of both 3 and 5, the program will print
 "FizzBuzz" instead of the integer.
 
