@@ -1,6 +1,6 @@
 require_relative '../lib/fizzbuzz'
 
-describe "return something" do
+describe "fizz or buzz: " do
 
     this_number = 1 
     while this_number <= 100 do
