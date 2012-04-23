@@ -2,60 +2,32 @@ require_relative '../lib/fizzbuzz'
 
 describe "looping through more numbers at once" do
 
-  counter = 1
+  counters = (1..100).to_a
+  
+  counters.each do |counter|
 
-  while counter <= 10 do
+    if counter % 15 == 0
+      it "should return fizzbuzz for multiples of 15" do
+        FizzBuzz.calc(counter).should == "fizzbuzz"
+      end
 
-    it "should return 1" do
-      FizzBuzz.calc(counter).should == counter
+    elsif counter % 3 == 0
+      it "should return fizz for multiples of 3" do
+        FizzBuzz.calc(counter).should == "fizz"
+      end
+
+    elsif counter % 5 == 0
+      it "should return buzz for multiples of 5" do
+        FizzBuzz.calc(counter).should == "buzz"
+      end
+    else
+      it "should return the number if FB does not apply" do
+        FizzBuzz.calc(counter).should == counter
+      end
     end
 
-    counter = counter + 1
-    print "counter = " + counter.to_s + " and FizzBuzz = " + FizzBuzz.calc(counter).to_s + "\n"
+    print "counter = " + counter.to_s + " and FB = " + FizzBuzz.calc(counter).to_s + "\n"
 
   end
 end
 
-describe "one step at a time" do
-
-  it "should return 1" do
-    FizzBuzz.calc(1).should == 1
-  end
-
-  it "should return 2" do
-    FizzBuzz.calc(2).should == 2
-  end
-
-  it "should return fizz when given 3" do
-    FizzBuzz.calc(3).should == "fizz"
-  end
-
-  it "should return 4" do
-    FizzBuzz.calc(4).should == 4
-  end
-
-  it "should return buzz when given 5" do
-    FizzBuzz.calc(5).should == "buzz"
-  end
-
-  it "should return fizz when given 6" do
-    FizzBuzz.calc(6).should == "fizz"
-  end
-
-  it "should return 7" do
-    FizzBuzz.calc(7).should == 7
-  end
-
-  it "should return 8" do
-    FizzBuzz.calc(8).should == 8
-  end
-
-  it "should return fizz when given 9" do
-    FizzBuzz.calc(9).should == "fizz"
-  end
-
-  it "should return buzz when given 10" do
-    FizzBuzz.calc(10).should == "buzz"
-  end
-
-end
