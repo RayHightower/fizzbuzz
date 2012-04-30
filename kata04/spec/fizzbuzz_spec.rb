@@ -24,6 +24,18 @@ describe 'return fizz, buzz, fizzbuzz, or the integer as appropriate' do
       it 'shoud return fizzbuzz' do
         FizzBuzz.calc(this_number).should == 'fizzbuzz'
       end
+    elsif this_number % 3 == 0
+      it 'shoud return fizz' do
+        FizzBuzz.calc(this_number).should == 'fizz'
+      end
+    elsif this_number % 5 == 0
+      it 'shoud return buzz' do
+        FizzBuzz.calc(this_number).should == 'buzz'
+      end
+    else
+      it 'shoud return the original integer' do
+        FizzBuzz.calc(this_number).should == this_number
+      end
     end
 
   end
