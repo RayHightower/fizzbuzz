@@ -7,5 +7,8 @@ class FizzBuzz
     return this_number
   end
 
+  # Is it considered bad programming practice to have multiple return statements?
+  # Even if all the tests (1000+ of them) are passing?
+  # Something for me to research. I anticipate a debate on the subject!
 
 end
