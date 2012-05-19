@@ -19,7 +19,7 @@ end
 
 describe 'return fizz, buzz, fizzbuzz, or the integer as appropriate' do
 
-  (1..1000).each do |this_number|
+  (1..100).each do |this_number|
     if this_number % 15 == 0
       it 'shoud return fizzbuzz' do
         FizzBuzz.calc(this_number).should == 'fizzbuzz'
