@@ -1,6 +1,6 @@
 require_relative '../lib/fizzbuzz'
 
-describe 'return the integer we give to it' do
+describe 'return fizz, buzz, or the integer we give to it' do
   this_number = 19
 
   it 'shoud return the integer we give to it' do
