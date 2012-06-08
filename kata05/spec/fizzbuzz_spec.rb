@@ -9,6 +9,12 @@ describe 'return the number we give it' do
   it 'should return fizz for 3' do
     FizzBuzz.calc(3).should == 'fizz'
   end
+  it 'should return fizz for 5' do
+    FizzBuzz.calc(5).should == 'buzz'
+  end
+  it 'should return fizzbuzz for 15' do
+    FizzBuzz.calc(15).should == 'fizzbuzz'
+  end
 end
 
 
