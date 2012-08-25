@@ -1,1 +1,2 @@
-rvm use ruby-1.9.3-p125@roman --create
+rvm use ruby-1.9.3
+rvm gemset use roman --create
